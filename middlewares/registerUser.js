@@ -12,7 +12,7 @@ function validateRegisterUser(req, res, next) {
     password: Joi.string().min(6).required(),
     confirmPassword: Joi.string().valid(Joi.ref("password")).required(),
     gender: Joi.string().valid("male", "female", "other").required(),
-    dob: Joi.date().format("DD/MM/YYYY"),
+    dob: Joi.date().format("YYYY-MM-DD"),
   });
 
   // schema options
