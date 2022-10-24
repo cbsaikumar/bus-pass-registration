@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "build": "cd frontend&&yarn build",
+    "start": "npx yarn build&&node index.js",
     "pm2": "pm2 start index.js -i max --watch"
   },
   "dependencies": {
