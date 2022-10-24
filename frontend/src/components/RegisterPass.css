@@ -1,0 +1,41 @@
+main.container {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+
+.gender-options {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+
+.gender-options label {
+  display: flex;
+  gap: 2%;
+}
+
+.gender-option {
+  margin: 1%;
+}
+
+.first-name,
+.last-name,
+.password,
+.email,
+.gender,
+.dob {
+  text-align: left;
+  margin: 3%;
+}
+
+.error {
+  text-align: left;
+  margin-left: 6%;
+  margin-top: -2%;
+  font-style: italic;
+}
+
+.form-error {
+  color: red;
+}
