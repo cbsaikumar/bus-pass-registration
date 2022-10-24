@@ -16,7 +16,7 @@ export default function Register() {
     formState: { errors, isDirty, isValid, isSubmitting },
   } = useForm();
 
-  const dateFnsFormat = "MM/dd/yyyy";
+  const dateFnsFormat = "dd/MM/yyyy";
   const formatDate = useCallback((date) => format(date, dateFnsFormat), []);
   const parseDate = useCallback((date) => parse(date, dateFnsFormat, null), []);
 
